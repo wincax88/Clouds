@@ -13,7 +13,6 @@ function createWindow() {
 
     mainWindow.loadURL(`file://${__dirname}/pages/index.html`)
 
-
     mainWindow.webContents.openDevTools()
 
     mainWindow.on('closed', function () {
