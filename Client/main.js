@@ -1,19 +1,18 @@
-const electron = require('electron')
+const electron = require('electron');
 
-const app = electron.app
+const app = electron.app;
 
-const BrowserWindow = electron.BrowserWindow
+const BrowserWindow = electron.BrowserWindow;
 
-
-let mainWindow
+let mainWindow;
 
 function createWindow() {
 
-    mainWindow = new BrowserWindow({ width: 800, height: 600 })
+    mainWindow = new BrowserWindow({ width: 800, height: 600 });
 
-    mainWindow.loadURL(`file://${__dirname}/pages/index.html`)
+    mainWindow.loadURL(`file://${__dirname}/pages/index.html`);
 
-    mainWindow.webContents.openDevTools()
+    mainWindow.webContents.openDevTools();
 
     mainWindow.on('closed', function () {
 
@@ -21,18 +20,18 @@ function createWindow() {
     })
 }
 
-app.on('ready', createWindow)
+app.on('ready', createWindow);
 
 app.on('window-all-closed', function () {
 
     if (process.platform !== 'darwin') {
         app.quit()
     }
-})
+});
 
 app.on('activate', function () {
 
     if (mainWindow === null) {
         createWindow()
     }
-})
+});
