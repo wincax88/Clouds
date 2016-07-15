@@ -1,0 +1,20 @@
+body{
+    z-index: -1;
+    background-color: lightseagreen;
+    font-family: "Microsoft YaHei UI";
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.mdl-badge{
+    margin-left: 30px;
+    color: white;
+}
+
+#dialog-mater-key{
+    margin-top: 10%;
+    z-index: 3;
+}

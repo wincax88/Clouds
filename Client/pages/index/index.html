@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clouds Launcher</title>
+  </head>
+  <body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+          <div class="mdl-layout__header-row">
+              <span class="mdl-layout-title">Clouds Launcher</span>
+              <div class="mdl-layout-spacer"></div>
+              <nav class="mdl-navigation mdl-layout--large-screen-only">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                          <label class="mdl-button mdl-js-button mdl-button--icon" for="serach">
+                              <i id="icon-search" class="material-icons">search</i>
+                          </label>
+                          <div class="mdl-textfield__expandable-holder">
+                              <input class="mdl-textfield__input" type="text" id="serach">
+                          </div>
+                      </div>
+                  <div class="mdl-tooltip" for="icon-search">使用搜索来快速找到你想要的整合包和启动器功能</div>
+                  <a href="#" id="icon-add" class="mdl-badge mdl-badge--overlap material-icons" data-badge="1">add</a>
+                  <div class="mdl-tooltip" for="icon-add">用Master Key来快速添加一个整合包</div>
+                  <a href="#" id="icon-account-box" class="mdl-badge mdl-badge--overlap material-icons" data-badge="1">account_box</a>
+                  <div class="mdl-tooltip" for="icon-account-box">和你的好友来一场愉快的交易吧~</div>
+                  <a href="#" id="icon-download" class="mdl-badge mdl-badge--overlap material-icons" data-badge="1">get_app</a>
+                  <div class="mdl-tooltip" for="icon-download">打开下载任务列表,时刻关注下载进度</div>
+                  <a href="#" id="icon-update-info" class="mdl-badge mdl-badge--overlap material-icons" data-badge="1">info</a>
+                  <div class="mdl-tooltip" for="icon-update-info">想知道启动器又更新了什么新功能?还不点进来看看?</div>
+              </nav>
+          </div>
+      </header>
+      <dialog id="dialog-mater-key" class="mdl-dialog">
+          <h1 class="mdl-dialog__title">Master Key</h1>
+          <div class="mdl-dialog__content">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="input-mater-key">
+                  <label class="mdl-textfield__label" for="input-mater-key">Master Key</label>
+              </div>
+          </div>
+          <div class="mdl-dialog__actions">
+              <button type="button" class="mdl-button">Submit</button>
+              <button type="button" class="mdl-button close">Cancel</button>
+          </div>
+      </dialog>
+      <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title" style="margin-top: 30px;">功能菜单</span>
+          <nav class="mdl-navigation">
+              <a id="start-game" class="mdl-navigation__link" href="">启动游戏</a>
+              <a id="package-market" class="mdl-navigation__link" href="">整合市场</a>
+              <a id="download-resources" class="mdl-navigation__link" href="">资源下载</a>
+              <a id="news" class="mdl-navigation__link" href="">快捷资讯</a>
+              <a id="account-settings" class="mdl-navigation__link" href="">账户设置</a>
+              <a id="theme-settings" class="mdl-navigation__link" href="">主题设置</a>
+              <a id="settings" class="mdl-navigation__link" href="">本体设置</a>
+              <a id="about-us" class="mdl-navigation__link" href="">关于我们</a>
+          </nav>
+      </div>
+      <main class="mdl-layout__content">
+          <div class="page-content">
+
+          </div>
+      </main>
+  </div>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./css/material.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  </body>
+  <script>
+      window.$ = window.Jquery = require('./js/jquery.js');
+      require('./js/material.js');
+      require('./js/renderer.js');
+  </script>
+</html>
