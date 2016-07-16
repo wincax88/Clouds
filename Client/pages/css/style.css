@@ -1,0 +1,72 @@
+body{
+    z-index: -1;
+    font-family: "Microsoft YaHei UI";
+    overflow:hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mdl-layout{
+    background: url("../assets/background.jpg") no-repeat center;
+}
+
+.mdl-card__supporting-text{
+    height: 300px;
+}
+.mdl-badge{
+    margin-left: 30px;
+    color: white;
+}
+
+#dialog-mater-key{
+    margin-top: 10%;
+    z-index: 3;
+}
+
+#icon-update-info{
+    display: none;
+}
+
+#dialog-update{
+    margin-top: 10%;
+    z-index: 3;
+}
+
+.page-content > iframe{
+   width: 1080px;
+   height: 2048px;
+}
+
+.list-control {
+    width: 300px;
+}
+
+.custom-font{
+    font-family: "Microsoft YaHei UI";
+}
+
+.list-radio{
+    display: inline;
+}
+
+.card-wide.mdl-card {
+    width: 300px;
+    height: 480px;
+    margin-left: 5%;
+    margin-top: 5%;
+    float: left;
+}
+.card-wide > .mdl-card__title {
+    color: #fff;
+    height: 220px;
+    background: url('../assets/background.jpg') center / cover;
+}
+.card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+.card-line{
+    margin-top: -10px;
+}

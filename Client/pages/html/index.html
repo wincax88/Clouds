@@ -26,50 +26,62 @@
                   <div class="mdl-tooltip" for="icon-account-box">和你的好友来一场愉快的交易吧~</div>
                   <a href="#" id="icon-download" class="mdl-badge mdl-badge--overlap material-icons" data-badge="1">get_app</a>
                   <div class="mdl-tooltip" for="icon-download">打开下载任务列表,时刻关注下载进度</div>
-                  <a href="#" id="icon-update-info" class="mdl-badge mdl-badge--overlap material-icons" data-badge="1">info</a>
+                  <a href="#" id="icon-update-info" class="mdl-badge mdl-badge--overlap material-icons" data-badge="0">info</a>
                   <div class="mdl-tooltip" for="icon-update-info">想知道启动器又更新了什么新功能?还不点进来看看?</div>
               </nav>
           </div>
       </header>
       <dialog id="dialog-mater-key" class="mdl-dialog">
-          <h1 class="mdl-dialog__title">Master Key</h1>
+      <h1 class="mdl-dialog__title">Master Key</h1>
+      <div class="mdl-dialog__content">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="input-mater-key">
+              <label class="mdl-textfield__label" for="input-mater-key">Master Key</label>
+          </div>
+      </div>
+      <div class="mdl-dialog__actions">
+          <button type="button" class="mdl-button">Submit</button>
+          <button type="button" class="mdl-button close">Cancel</button>
+      </div>
+      </dialog>
+      <dialog id="dialog-update" class="mdl-dialog">
+          <h1 class="mdl-dialog__title">发现新版本!</h1>
           <div class="mdl-dialog__content">
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" type="text" id="input-mater-key">
-                  <label class="mdl-textfield__label" for="input-mater-key">Master Key</label>
-              </div>
+              发现了新的启动器版本?是否更新?
           </div>
           <div class="mdl-dialog__actions">
-              <button type="button" class="mdl-button">Submit</button>
+              <button type="button" class="mdl-button">Update</button>
               <button type="button" class="mdl-button close">Cancel</button>
           </div>
       </dialog>
       <div class="mdl-layout__drawer">
           <span class="mdl-layout-title" style="margin-top: 30px;">功能菜单</span>
-          <nav class="mdl-navigation">
-              <a id="start-game" class="mdl-navigation__link" href="#">启动游戏</a>
-              <a id="package-market" class="mdl-navigation__link" href="#">整合市场</a>
-              <a id="download-resources" class="mdl-navigation__link" href="#">资源下载</a>
-              <a id="news" class="mdl-navigation__link" href="#">快捷资讯</a>
-              <a id="account-settings" class="mdl-navigation__link" href="#">账户设置</a>
-              <a id="theme-settings" class="mdl-navigation__link" href="#">主题设置</a>
-              <a id="settings" class="mdl-navigation__link" href="#">本体设置</a>
-              <a id="about-us" class="mdl-navigation__link" href="#">关于我们</a>
+          <nav class="mdl-navigation menu-navigation">
+              <a id="start-game" class="mdl-navigation__link" href="#" data-value="launch_game">启动游戏</a>
+              <a id="package-market" class="mdl-navigation__link" href="#" data-value="package_market">整合市场</a>
+              <a id="download-resources" class="mdl-navigation__link " href="#" data-value="resources_download">资源下载</a>
+              <a id="news" class="mdl-navigation__link" href="#" data-value="news">快捷资讯</a>
+              <a id="account-settings" class="mdl-navigation__link" href="#" data-value="account_settings">账户设置</a>
+              <a id="theme-settings" class="mdl-navigation__link" href="#" data-value="theme_settings">主题设置</a>
+              <a id="settings" class="mdl-navigation__link" href="#" data-value="launcher_settings">本体设置</a>
+              <a id="about-us" class="mdl-navigation__link" href="#" data-value="about_us">关于我们</a>
           </nav>
       </div>
       <main class="mdl-layout__content">
           <div class="page-content">
+              <iframe id="frame-page" frameborder="0" scrolling="no">
 
+              </iframe>
           </div>
       </main>
   </div>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="./css/material.css"/>
-  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="../css/material.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
   </body>
   <script>
-      window.$ = window.Jquery = require('./js/jquery.js');
-      require('./js/material.js');
-      require('./js/renderer.js');
+      window.$ = window.Jquery = require('../js/jquery.js');
+      require('../js/material.js');
+      require('../js/renderer.js');
   </script>
 </html>

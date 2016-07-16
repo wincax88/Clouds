@@ -1215,7 +1215,7 @@ MaterialMenu.prototype.init = function () {
         for (var i = 0; i < items.length; i++) {
             // Add a listener to each menu item.
             items[i].addEventListener('click', this.boundItemClick_);
-            // Add a tab index to each menu item.
+            // Add a tab html to each menu item.
             items[i].tabIndex = '-1';
             // Add a keyboard listener to each menu item.
             items[i].addEventListener('keydown', this.boundItemKeydown_);
